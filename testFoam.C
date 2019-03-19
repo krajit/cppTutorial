@@ -1,17 +1,16 @@
 #include "fvCFD.H"
 #include "animal.H"
+#include "cow.H"
 
 
 int main(int argc, char *argv[])
 {
 
-    animal tony(20,50.0); // age = 20, weight = 50
+    cow   harry(10, 100, 15);
+    cow   abcd(15,16,17,18);
 
-    animal sam(10); // age = 10, default weight = 100
 
-
-    Info << sam.getWeight() << endl;
-    Info << sam.getAge() << endl;
+    Info << harry.getWeight() << endl;
 
     return 0;
 }

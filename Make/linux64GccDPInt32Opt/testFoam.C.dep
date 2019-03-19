@@ -768,5 +768,6 @@ $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRange.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRangeI.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRangesI.H \
 animal.H \
+cow.H \
 
 

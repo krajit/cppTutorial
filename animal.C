@@ -2,9 +2,7 @@
 
 animal::animal()
 {
-
     Info << "default constructor called" << endl;
-
     // default
     age_ = 5;
     weight_ = 10.0;
@@ -14,7 +12,6 @@ animal::animal(label inputAge, scalar inputWeight)
 {
 
     Info << "second constructor called" << endl;
-    // default
     age_ = inputAge;
     weight_ = inputWeight;
 }
@@ -29,12 +26,7 @@ animal::animal(label inputAge)
 
 scalar animal::getWeight()
 {
-    Info << "bye" << endl;
-
-    return weight_, 34;
-
-
-    return age_;
+    return weight_;
 }
 
 label animal::getAge()

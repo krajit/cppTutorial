@@ -1,4 +1,3 @@
-
 // include protection
 #ifndef animal_H
 #define animal_H
@@ -11,6 +10,8 @@ class animal {
 // private members
 
     label age_;
+
+
     scalar weight_;
 
 public:
