@@ -1,4 +1,6 @@
 #include "fvCFD.H"
+#include "animal.H"
+
 
 int main(int argc, char *argv[])
 {
@@ -10,8 +12,6 @@ int main(int argc, char *argv[])
 
     Info << sam.getWeight() << endl;
     Info << sam.getAge() << endl;
-
-
 
     return 0;
 }

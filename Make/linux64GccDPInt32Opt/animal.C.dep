@@ -1,5 +1,6 @@
-$(OBJECTS_DIR)/testFoam.C.dep: \
-testFoam.C \
+$(OBJECTS_DIR)/animal.C.dep: \
+animal.C \
+animal.H \
 $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/fvCFD.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/parRun.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/Pstream.H \
@@ -767,6 +768,5 @@ $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRanges.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRange.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRangeI.H \
 $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/scalarRangesI.H \
-animal.H \
 
 

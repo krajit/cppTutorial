@@ -1,49 +1,43 @@
-class animal {
-// private members
-    label age_;
-    scalar weight_;
-// anything before public is private by default
-public:
-   //constructor
-    animal()
-    {
+#include "animal.H"
 
-        Info << "default constructor called" << endl;
+animal::animal()
+{
 
-        // default
-        age_ = 5;
-        weight_ = 10.0;
-    }
+    Info << "default constructor called" << endl;
 
-    animal(label inputAge, scalar inputWeight)
-    {
+    // default
+    age_ = 5;
+    weight_ = 10.0;
+}
 
-      Info << "second constructor called" << endl;
-        // default
-        age_ = inputAge;
-        weight_ = inputWeight;
-    }
+animal::animal(label inputAge, scalar inputWeight)
+{
 
-    animal(label inputAge) 
-    {
-        Info << "one input constructor called" << endl;
-        age_ = inputAge;
-        weight_ = 100;
-    }
+    Info << "second constructor called" << endl;
+    // default
+    age_ = inputAge;
+    weight_ = inputWeight;
+}
+
+animal::animal(label inputAge) 
+{
+    Info << "one input constructor called" << endl;
+    age_ = inputAge;
+    weight_ = 100;
+}
 
 
-    scalar getWeight()
-    {
-        Info << "bye" << endl;
+scalar animal::getWeight()
+{
+    Info << "bye" << endl;
 
-        return weight_, 34;
+    return weight_, 34;
 
 
-        return age_;
-    }
+    return age_;
+}
 
-    label getAge()
-    {
-        return age_;
-    }
-};
+label animal::getAge()
+{
+    return age_;
+}
