@@ -1,4 +1,5 @@
 SOURCE = \
+cow.C \
 animal.C \
 testFoam.C \
 

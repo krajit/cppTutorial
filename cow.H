@@ -7,30 +7,24 @@
 #include "fvCFD.H"
 #include "animal.H"
 
-class cow 
-    :public animal 
+
+class cow  :public animal 
 {
     // private members
     scalar dailyMilkProd_;
     scalar height_;
 
     public:
-
     // constructor with three input
-    cow(label inputAge, scalar inputWeight, scalar inputMilkProd)
-    :animal(inputAge,inputWeight)
-    {
-        dailyMilkProd_ = inputMilkProd;
-    }
+    cow(label inputAge, scalar inputWeight, scalar inputMilkProd);
+    
+    // constructor with four input
+    cow(label inputAge, scalar inputWeight, scalar inputMilkProd, scalar  ht);
 
     // public functions
+
     scalar getMilk();
-
-    // cow says moo
     void moo();
-
-
-
 };
 
 #endif
